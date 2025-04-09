@@ -204,6 +204,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin: 40px 0;
 }
 footer > div {
@@ -286,4 +287,70 @@ a {
 
 footer p {
   color: rgb(75, 73, 73);
+}
+
+.searches{
+  width: 80%;
+  /* background-color: aqua; */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.searches>div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hr{
+  width: 85%;
+  height: 1px;
+  background-color: #c7c5c5;
+}
+
+.searches a{
+  padding: 5px;
+}
+.searches p{
+  text-align: justify;
+}
+
+.main-footer{
+  width: 100%;
+  height: 5vh;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.main-footer a, .cin a{
+  color: rgb(93, 88, 223);
+  font-size:1.2em ;
+  font-weight: 700;
+
+}
+
+.address{
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  display: flex;
+}
+
+.address h5{
+  font-size: 1.1em;
+}
+
+.add{
+  width: 80%;
+}
+
+.cin{
+  width: 50%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
