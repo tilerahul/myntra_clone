@@ -21,13 +21,46 @@ header {
 
 nav {
   width: 35%;
-  /* height: 15vh; */
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
   font-size: 15px;
   font-weight: 700;
+  position: relative;
+}
+
+/* section css */
+.main-div {
+  width: 100vw;
+  height: 85vh;
+  position: absolute;
+  top: 15vh;
+  background-color: #47464624;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.mens-section {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.mens-section div {
+  width: 20%;
+  padding: 10px;
+}
+
+.mens-section h5 {
+  color: rgb(215, 69, 117);
+}
+
+#men:hover .main-div{
+  display: block;
 }
 
 nav a {
@@ -40,6 +73,11 @@ nav a {
 
 nav a:hover {
   border-bottom: 3px solid skyblue;
+
+}
+nav a:hover .main-div{
+  display: block;
+
 }
 
 .search {
@@ -55,9 +93,9 @@ nav a:hover {
   background-color: rgb(238, 238, 238);
 }
 
-.search input:focus{
-    border:1px solid rgb(163, 162, 162);
-    background-color: white;
+.search input:focus {
+  border: 1px solid rgb(163, 162, 162);
+  background-color: white;
 }
 
 .logo img {
@@ -289,65 +327,64 @@ footer p {
   color: rgb(75, 73, 73);
 }
 
-.searches{
+.searches {
   width: 80%;
   /* background-color: aqua; */
   padding-top: 20px;
   display: flex;
   flex-direction: column;
 }
-.searches>div{
+.searches > div {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
-.hr{
+.hr {
   width: 85%;
   height: 1px;
   background-color: #c7c5c5;
 }
 
-.searches a{
+.searches a {
   padding: 5px;
 }
-.searches p{
+.searches p {
   text-align: justify;
 }
 
-.main-footer{
+.main-footer {
   width: 100%;
   height: 5vh;
   padding-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.main-footer a, .cin a{
+.main-footer a,
+.cin a {
   color: rgb(93, 88, 223);
-  font-size:1.2em ;
+  font-size: 1.2em;
   font-weight: 700;
-
 }
 
-.address{
+.address {
   width: 100%;
   height: auto;
   padding: 10px 0;
   display: flex;
 }
 
-.address h5{
+.address h5 {
   font-size: 1.1em;
 }
 
-.add{
+.add {
   width: 80%;
 }
 
-.cin{
+.cin {
   width: 50%;
   height: 25vh;
   display: flex;
