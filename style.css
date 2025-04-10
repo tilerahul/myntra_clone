@@ -17,6 +17,7 @@ header {
   position: sticky;
   background-color: white;
   top: 0;
+  box-shadow: 1px 0 1px black;
 }
 
 nav {
@@ -37,11 +38,17 @@ nav {
   height: 85vh;
   position: absolute;
   top: 15vh;
-  background-color: #47464624;
+  /* background-color: #06060667; */
   display: flex;
   justify-content: center;
+  align-items: center;
   display: none;
 }
+
+.main-div p{
+  font-weight: 400;
+}
+
 .mens-section {
   width: 80%;
   height: auto;
@@ -56,10 +63,64 @@ nav {
 }
 
 .mens-section h5 {
-  color: rgb(215, 69, 117);
+  color: rgb(238,105,133);
 }
 
-#men:hover .main-div{
+#men:hover {
+  border-bottom: 3px solid rgb(238,105,133);
+}
+
+#men:hover+.main-div{
+  display: block;
+}
+
+.main-div:hover{
+  display: block;
+}
+
+.women-main {
+  width: 100vw;
+  height: 85vh;
+  /* left: -12vw; */
+  position: absolute;
+  top: 15vh;
+  /* background-color: #06060611; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  display: none;
+}
+
+.women-main p{
+  font-weight: 400;
+}
+
+.women-section {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.women-section div {
+  width: 20%;
+  padding: 10px;
+}
+
+.women-section h5 {
+  color: rgb(251,87,196);
+}
+
+#women:hover{
+  border-bottom: 3px solid rgb(251,87,196);
+}
+
+#women:hover+.women-main{
+  display: block;
+}
+
+.women-main:hover{
   display: block;
 }
 
@@ -83,6 +144,7 @@ nav a:hover .main-div{
 .search {
   width: 30vw;
 }
+
 .search input {
   width: 100%;
   height: 7vh;
