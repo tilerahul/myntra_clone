@@ -172,6 +172,58 @@ nav {
   display: block;
 }
 
+/* home section css */
+.home-main {
+  width: 100vw;
+  height: 85vh;
+  /* left: -12vw; */
+  position: absolute;
+  top: 15vh;
+  /* background-color: #06060611; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  display: none;
+}
+
+.home-main p{
+  font-weight: 400;
+}
+
+.home-section {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.home-section div {
+  width: 20%;
+  padding: 10px;
+}
+
+.home-section h5 {
+  color: #f2c323;
+}
+
+#home:hover{
+  border-bottom: 3px solid #f2c323;
+}
+
+#home:hover+.home-main{
+  display: block;
+}
+
+.home-main:hover{
+  display: block;
+}
+
+p>a:hover{
+  font-weight: 700;
+  color: black;
+}
+
 nav a {
   width: 15%;
   height: 100%;
@@ -180,10 +232,10 @@ nav a {
   padding: 5vh 0;
 }
 
-nav a:hover {
+/* nav a:hover {
   border-bottom: 3px solid skyblue;
 
-}
+} */
 nav a:hover .main-div{
   display: block;
 
@@ -474,7 +526,7 @@ footer p {
 
 .main-footer a,
 .cin a {
-  color: rgb(93, 88, 223);
+  color: rgb(82,108,208);
   font-size: 1.2em;
   font-weight: 700;
 }
