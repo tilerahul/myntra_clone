@@ -78,6 +78,7 @@ nav {
   display: block;
 }
 
+/* women section css */
 .women-main {
   width: 100vw;
   height: 85vh;
@@ -121,6 +122,53 @@ nav {
 }
 
 .women-main:hover{
+  display: block;
+}
+
+/* kids section css */
+.kid-main {
+  width: 100vw;
+  height: 85vh;
+  /* left: -12vw; */
+  position: absolute;
+  top: 15vh;
+  /* background-color: #06060611; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  display: none;
+}
+
+.kid-main p{
+  font-weight: 400;
+}
+
+.kid-section {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.kid-section div {
+  width: 20%;
+  padding: 10px;
+}
+
+.kid-section h5 {
+  color: rgb(243,110,16);
+}
+
+#kid:hover{
+  border-bottom: 3px solid rgb(243,110,16);
+}
+
+#kid:hover+.kid-main{
+  display: block;
+}
+
+.kid-main:hover{
   display: block;
 }
 
