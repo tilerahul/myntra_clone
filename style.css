@@ -422,6 +422,13 @@ nav a:hover .main-div{
 
 .search {
   width: 30vw;
+  display: flex;
+}
+.search-icon{
+  position: relative;
+  top: 20px;
+  left: 35px;
+  color: #717288;
 }
 
 .search input {
@@ -430,7 +437,7 @@ nav a:hover .main-div{
   border: none;
   border-radius: 5px;
   outline: none;
-  padding-left: 20px;
+  padding-left: 50px;
   background-color: rgb(238, 238, 238);
 }
 
