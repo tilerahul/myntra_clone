@@ -29,7 +29,6 @@ nav {
   gap: 15px;
   font-size: 15px;
   font-weight: 700;
-  position: relative;
 }
 
 /* section css */
@@ -38,10 +37,9 @@ nav {
   height: 85vh;
   position: absolute;
   top: 15vh;
-  /* background-color: #06060667; */
+  left: 0;
+  background-color: #06060667;
   display: flex;
-  justify-content: center;
-  align-items: center;
   display: none;
 }
 
@@ -54,6 +52,8 @@ nav {
   height: auto;
   background-color: white;
   display: flex;
+  position: relative;
+  left: 10vw;
   gap: 5px;
 }
 
@@ -82,13 +82,11 @@ nav {
 .women-main {
   width: 100vw;
   height: 85vh;
-  /* left: -12vw; */
   position: absolute;
   top: 15vh;
-  /* background-color: #06060611; */
+  left: 0;
+  background-color: #06060667;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
   display: none;
 }
 
@@ -101,6 +99,8 @@ nav {
   height: auto;
   background-color: white;
   display: flex;
+  position: relative;
+  left: 10vw;
   gap: 5px;
 }
 
@@ -129,13 +129,11 @@ nav {
 .kid-main {
   width: 100vw;
   height: 85vh;
-  /* left: -12vw; */
   position: absolute;
   top: 15vh;
-  /* background-color: #06060611; */
+  left: 0;
+  background-color: #06060667;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
   display: none;
 }
 
@@ -148,6 +146,8 @@ nav {
   height: auto;
   background-color: white;
   display: flex;
+  position: relative;
+  left: 10vw;
   gap: 5px;
 }
 
@@ -176,13 +176,11 @@ nav {
 .home-main {
   width: 100vw;
   height: 85vh;
-  /* left: -12vw; */
   position: absolute;
   top: 15vh;
-  /* background-color: #06060611; */
+  left: 0;
+  background-color: #06060667;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
   display: none;
 }
 
@@ -195,6 +193,8 @@ nav {
   height: auto;
   background-color: white;
   display: flex;
+  position: relative;
+  left: 10vw;
   gap: 5px;
 }
 
@@ -216,6 +216,54 @@ nav {
 }
 
 .home-main:hover{
+  display: block;
+}
+
+/* beauty section css  */
+.beauty-main {
+  width: 100vw;
+  height: 85vh;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  background-color: #06060667;
+  display: flex;
+  display: none;
+}
+
+.beauty-main p{
+  font-weight: 400;
+}
+
+.beauty-section {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  left: 10vw;
+  gap: 5px;
+}
+
+.beauty-section div {
+  width: 20%;
+  padding: 10px;
+}
+
+.beauty-section h5 {
+  color: #0db7af;
+}
+
+#beauty:hover{
+  border-bottom: 3px solid #0db7af;
+}
+
+#beauty:hover+.beauty-main{
+  display: block;
+}
+
+.beauty-main:hover{
   display: block;
 }
 
