@@ -320,6 +320,84 @@ nav {
   display: block;
 }
 
+/* studio section css  */
+.studio-main{
+  width: 100vw;
+  height: 85vh;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  background-color: #06060667;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.studio-section{
+    width: 45%;
+    height: 93%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+}
+
+.studio-section>div{
+  width: 100%;
+  height: 25%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.studio-section>div>p{
+  font-weight: 400;
+}
+
+.studio-main div:nth-child(2){
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.studio-main div:nth-child(2) img{
+  width: 80%;
+}
+
+.studio-section div:nth-child(3){
+  width: 100%;
+  height: 15%;
+}
+
+.studio-main div:nth-child(3) button{
+  padding:7px 14px ;
+  background-color: white;
+  border: 1px solid rgb(172, 169, 169);
+  outline: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.studio-main div:nth-child(3) i{
+  padding: 0 5px;
+}
+
+#studio:hover{
+  border-bottom: 3px solid #ff3f6c;
+}
+
+#studio:hover+.studio-main{
+  display: block;
+}
+
+.studio-main:hover{
+  display: block;
+}
+
 p>a:hover{
   font-weight: 700;
   color: black;
